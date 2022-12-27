@@ -1,4 +1,4 @@
-import "./success-button.component.css";
+import "./success-button.css";
 import React from "react";
 import { Button } from "@mui/material";
 

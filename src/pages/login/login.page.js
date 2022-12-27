@@ -1,6 +1,6 @@
 import "./login.page.css";
 import React from "react";
-import { SuccessButtonComponent } from "../../components/success-button/success-button.component";
+import { SuccessButtonComponent } from "../../components/success-button/success-button";
 
 export class LoginPage extends React.Component {
   render() {
