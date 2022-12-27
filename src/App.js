@@ -1,10 +1,10 @@
 import "./App.css";
 
 import React, { Fragment } from "react";
-import { HeaderComponent } from "./components/header/header.component.jsx";
-import { FooterComponent } from "./components/footer/footer.component.jsx";
+import { HeaderComponent } from "./components/header/header.component";
+import { FooterComponent } from "./components/footer/footer.component";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { routerConfig } from "./route.config.jsx";
+import { routerConfig } from "./route.config";
 
 class App extends React.Component {
   render() {

@@ -1,4 +1,4 @@
-import { LoginPage } from "./pages/index.jsx";
+import { LoginPage } from "./pages/index";
 export const routerConfig = [
   {
     path: "",

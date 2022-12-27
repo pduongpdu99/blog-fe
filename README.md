@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## structure 
+```
+└── /src
+    ├── /assets
+    ├── /components
+    ├── /context
+    ├── /hooks
+    ├── /pages
+    ├── /services
+    ├── /utils
+    └── App.js
+    ├── index.js
+```
+
+### Common Modules
+One advantage of React being un-opinionated is it doesn’t care how you divide your modules. When developing a page in a React app, consider dividing it into modular pieces. This will help you reduce the complexity and create structures that are open for reusable or shared across the application.
+
+Shareable code in React app should be divided under its own domain. A common module can be reusable custom components, custom hooks, business logic, constants, and utility functions. These reusable pieces are shared across the application to be used on more than one page component. Having a folder for them in your application’s directory structure is a good starting point.
+
+### Add Custom Components in their own folders
+
+```
+└── /src
+    ├── /components
+    |   ├── /Button
+    |   |   ├── Button.js
+    |   |   ├── Button.styles.js
+    |   |   ├── Button.test.js
+    |   |   ├── Button.stories.js
+    |   ├──index.js
+```
+
+Here is a brief explanation of what each file inside the Button directory contains:
+
+- `Button.js` file that contains the actual React component
+- `Button.styles.js` file, let’s assume you are using styled components, contains corresponding styles
+- `Button.test.js` file that contains tests
+- `Button.stories.js` the Storybook file
