@@ -1,0 +1,19 @@
+.form-outline {
+  border: 1px;
+  border-style: solid;
+}
+
+.css-mhc70k-MuiGrid-root > .MuiGrid-item:last-child {
+  padding-left: 0px !important;
+}
+
+.css-1plom3a-MuiPaper-root,
+.css-13ula8q-MuiPaper-root {
+  border-radius: 0px !important;
+}
+
+.login-root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
