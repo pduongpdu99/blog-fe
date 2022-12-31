@@ -23,7 +23,7 @@ export class SuccessButtonComponent extends React.Component {
         variant="contained"
         color="success"
        >
-        {this.nameDefault} {this.state.count}
+        {this.nameDefault}
       </Button>
     );
   }
