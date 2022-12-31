@@ -16,7 +16,6 @@
     ".npm",
     ".yarn"
   ],
-  "extends": "js",
   "typeAcquisition": {
     "enable": true,
     "include": []
