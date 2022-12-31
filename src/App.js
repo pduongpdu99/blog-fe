@@ -5,12 +5,19 @@ import { HeaderComponent } from "./components/header/header";
 import { FooterComponent } from "./components/footer/footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { routerConfig } from "./route.config";
+import { createBrowserHistory } from "history";
+import NO_HEADER_FOOTER_PATH from "utils/path";
 
 class App extends React.Component {
+  history = createBrowserHistory();
+  isLoginPage = this.history.location.pathname.includes(
+    NO_HEADER_FOOTER_PATH.LOGIN_PATH
+  );
+
   render() {
     return (
       <Fragment>
-        <HeaderComponent />
+        {!this.isLoginPage ? <HeaderComponent /> : <></>}
 
         <BrowserRouter>
           <Routes>
@@ -30,7 +37,7 @@ class App extends React.Component {
           </Routes>
         </BrowserRouter>
 
-        <FooterComponent />
+        {!this.isLoginPage ? <FooterComponent /> : <></>}
       </Fragment>
     );
   }
